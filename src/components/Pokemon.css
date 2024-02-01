@@ -1,0 +1,75 @@
+.cardsContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  max-width: 1020px;
+}
+
+.pokeCard{
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  border-radius: 10px;
+  font-size: .7rem;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, .4);
+  transition: .4s ease;
+}
+.pokeCard:hover{
+  transform: translateY(4px);
+}
+
+.pokeCard button{
+  background-color: var(--blue);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 7px 14px;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+.filters{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 0 auto;
+  max-width: 1020px;
+  gap: 15px;
+}
+
+.filter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter div {
+  display: flex;
+  gap: 5px;
+}
+
+.filter div button,
+.reset-btn {
+  color: #fff;
+  background-color: var(--blue);
+  border: none;
+  padding: 7px 14px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, .4);
+
+}
+
+.reset{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.reset-btn{
+  background-color: #dc0f0f;
+}

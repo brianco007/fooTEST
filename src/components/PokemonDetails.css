@@ -1,0 +1,60 @@
+.main-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(../assets/poke-landscape.jpg);
+  background-size: cover;
+}
+
+.main-details button{
+  background-color: var(--yellow);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 7px 14px;
+  margin-top: 5px;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+
+
+.details{
+  background: #fff;
+  width: clamp(330px, 90%, 400px);
+  margin: 0 auto;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, .4);
+  border-radius: 10px;
+  padding: 2rem 0;
+  position: relative;
+  z-index: 2;
+}
+
+.details figure{
+  display: flex;
+}
+
+.details img {
+  width: 180px;
+}
+
+@media screen and (max-width: 400px){
+  .details figure{
+    flex-direction: column;
+  }
+}
+
+.pokeball1{
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  z-index: 1;
+}
+

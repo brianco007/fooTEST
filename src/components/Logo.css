@@ -1,0 +1,21 @@
+header{
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+header img{
+  width: 350px;
+  max-width: 90%;
+  margin: 0 auto;
+  animation: tilt 2s alternate infinite;
+}
+
+@keyframes tilt {
+  0%{
+    transform: rotate(-3deg);
+  }
+  100%{
+    transform: rotate(3deg);
+  }
+}
